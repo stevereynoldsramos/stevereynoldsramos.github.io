@@ -20,6 +20,8 @@
 
 .wrapper {
   position: fixed;
+  min-width: 1100px;
+  overflow: hidden;
 }
 
 body {
