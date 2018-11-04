@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "GT America Regular";
+  src: url("assets/fonts/GT-America-Regular.otf");
+}
+
+@font-face {
+  font-family: "GT America Mono";
+  src: url("assets/fonts/GT-America-Mono-Regular.otf");
+}
+
+@font-face {
+  font-family: "GT America Extended Regular";
+  src: url("assets/fonts/GT-America-Extended-Regular.otf");
+}
+
+@font-face {
+  font-family: "GT America Expanded Bold";
+  src: url("assets/fonts/GT-America-Expanded-Bold.otf");
+}
+
+.wrapper {
+  position: fixed;
+}
+
+body {
+  background-color: #223FFF;
+}
+
+p {
+  color: #FEFEFE;
+}
+
+.intro {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.main {
+  font-family: "GT America Regular";
+  font-size: 38px;
+}
+
+p.main > a {
+  color: #FEFEFE;
+  text-decoration-color:#9AFFA4;
+}
+
+.title {
+  font-family: "GT America Expanded Bold";
+  font-size: 20px;
+}
+
+.description {
+  font-family: "GT America Regular";
+  font-size: 18px;
+}
+
+p.description > a {
+  color: #FEFEFE;
+  text-decoration-color:#9AFFA4;
+}
+
+.secondary {
+  margin-top: 100px;
+}
+
+.info {
+  float: left;
+}
+
+#one {
+  margin-left: 5%;
+  width: auto;
+}
+
+#two {
+  margin-left: 240px;
+  width: 260px;
+}
+
+#three {
+  margin-left: 180px;
+  width: auto;
+}
