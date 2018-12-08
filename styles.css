@@ -14,8 +14,8 @@
 }
 
 @font-face {
-  font-family: "GT America Expanded Bold";
-  src: url("assets/fonts/GT-America-Expanded-Bold.otf");
+  font-family: "GT America Expanded Medium";
+  src: url("assets/fonts/GT-America-Expanded-Medium.otf");
 }
 
 .wrapper {
@@ -33,7 +33,7 @@ p {
 }
 
 .intro {
-  width: 90%;
+  max-width: 600px;
   margin-left: 5%;
   margin-top: 10%;
 }
@@ -49,7 +49,7 @@ p.main > a {
 }
 
 .title {
-  font-family: "GT America Expanded Bold";
+  font-family: "GT America Expanded Medium";
   font-size: 20px;
 }
 
