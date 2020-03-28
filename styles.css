@@ -1,178 +1,178 @@
 @font-face {
-  font-family: "FavoritTrialPro-Medium";
-  src: url("assets/fonts/FavoritTrialStd-Medium.woff");
+  font-family: "GT_America_Regular";
+  src: url("assets/fonts/GT_America_Regular.woff");
 }
 
 @font-face {
-  font-family: "FavoritTrialPro-Regular";
-  src: url("assets/fonts/FavoritTrialStd-Regular.woff");
+  font-family: "GT_America_Light";
+  src: url("assets/fonts/GT_America_Light.woff");
 }
 
-@font-face {
-  font-family: "FavoritTrialPro-Light";
-  src: url("assets/fonts/FavoritTrialStd-Light.woff");
+
+.index, body {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-auto-rows: auto;
+  column-gap: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
 }
 
-@font-face {
-  font-family: "GTAmericaExtendedMedium";
-  src: url("assets/fonts/GTAmericaExtendedMedium.otf");
-}
-
-body {
-  margin: 0;
-  height: 100vh;
-  width: auto;
-  display: flex;
-  background-color: #060605;
-}
-
-.wrapper {
-  height: auto;
-  width: auto;
-}
-
-.container-1 {
-  display: flex;
-  width: 100%;
-  height: 90vh;
-}
-
-.container-2 {
-  display: flex;
-  width: 100%;
-  clear: both;
-  height: 10%;
-}
-
-#top-left-box {
-  border-right: 2px solid;
-  border-bottom: 2px solid;
-  border-color: #FFFBFB;
-  width: 60px;
-  height: 92vh;
-  display: inline-flex;
-}
-
-#top-right-box {
-  border-bottom: 2px solid;
-  border-color: #FFFBFB;
-  margin: 0;
-  width: 100%;
-  height: 92vh;
-  display: inline-flex;
-}
-
-#bottom-left-box {
-  width: 60px;
-  height: 100%;
-  border-right: 2px solid;
-  border-color: #FFFBFB;
-  display: flex;
-}
-
-#bottom-right-box {
-  width: 100%;
-  height: 100%;
-  display: inline-flex;
-}
-
-#hero {
-  width: 52%;
-  margin-left: 36px;
-  margin-top: 60px;
-  display: block;
-}
-
-#visual {
-  display: block;
-  width: 40%;
-}
-
-#repeater {
-    object-fit: cover;
-    max-width: 57px;
-}
-
-#links {
+#block-1 {
+  grid-column-start: 3;
+  grid-column-end: 8;
   margin-top: 120px;
+  display: inline-block;
 }
 
-.photo {
-  margin-top: 80px;
-  margin-left: 150px;
-  margin-right: 100px;
-  max-height: 66%;
-  max-width: 80%;
-  display: inline-flex;
-  clear: both;
+p.headline {
+  font-family: "GT_America_Regular";
+  font-size: 1.3rem;
+  color: #FFFBFB;
+  margin-top: 40px;
+}
+
+#oceans {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: -99;
 }
 
 a {
+  color: #D7D1D1;
   text-decoration: none;
 }
 
-h1 {
-  font-family: "FavoritTrialPro-Medium";
-  font-weight: 400;
-  font-size: 36px;
-  margin-top: 30px;
-  margin-left: 36px;
-  margin-bottom: 40px;
-  line-height: 40px;
-  color: #FFFBFB;
+a:hover {
+  opacity: 0;
+  transition: 1.4s;
 }
 
-.memo {
-  font-family: "FavoritTrialPro-Regular";
-  font-size: 18px;
-  margin-left: 36px;
-  padding-right: 10px;
-  color: #949494;
-  width: auto;
+.link-item {
+  font-size: 1.1rem;
+  font-family: "GT_America_Light";
   display: block;
+  margin-bottom: 4px;
 }
 
-.memo:hover {
-  color: #FFFBFB;
-  transition: 1s;
+#block-2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  display: inline-block;
+  margin-top: 120px;
 }
 
-.nav {
-    font-family: "FavoritTrialPro-Medium";
-    font-size: 16px;
-    margin-top: 32px;
-    margin-left: 40px;
-    text-decoration: none;
-    display: inline;
-    color: #FFFBFB;
+#block-3 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  display: inline-block;
+  margin-top: 120px;
 }
 
-.linkset {
-  display: inline;
-  float: left;
-  margin-right: 40px;
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    body {
+      display: grid;
+      grid-template-columns: repeat(12, [col-start] 1fr);
+      grid-auto-rows: auto;
+      column-gap: 8px;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    #block-1 {
+      grid-column-start: 2;
+      grid-column-end: 10;
+      margin-top: 240px;
+      display: inline-block;
+    }
+
+    p.headline {
+      font-family: "GT_America_Regular";
+      font-size: 1.4rem;
+      color: #FFFBFB;
+      margin-top: 40px;
+    }
+
+    #block-2 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      display: inline-block;
+      margin-top: 120px;
+    }
+
+    #block-3 {
+      grid-column-start: 6;
+      grid-column-end: 9;
+      display: inline-block;
+      margin-top: 120px;
+    }
+
+    .link-item {
+      font-size: 1.2rem;
+      font-family: "GT_America_Light";
+      display: block;
+      margin-bottom: 4px;
+    }
 }
 
-h6 {
-  font-family: "FavoritTrialPro-Light";
-  font-size: 14px;
-  margin-top: 4px;
-  margin-left: 140px;
-  color: #FFFBFB;
-}
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 1) {
 
-#area17 {
-  color: #949494;
-  text-decoration: none;
-}
+    body {
+      display: grid;
+      grid-template-columns: repeat(12, [col-start] 1fr);
+      grid-auto-rows: auto;
+      column-gap: 8px;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+    }
 
-#area17:hover {
-  color: #FFFBFB;
-  transition: 1s;
-}
+    #block-1 {
+      grid-column-start: 2;
+      grid-column-end: 10;
+      margin-top: 40px;
+      display: inline-block;
+    }
 
-.break {
-  display: inline-flex;
-  height: auto;
-  width: auto;
+    p.headline {
+      font-family: "GT_America_Regular";
+      font-size: 1.1rem;
+      color: #FFFBFB;
+      margin-top: 40px;
+    }
+
+    #block-2 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      display: inline-block;
+      margin-top: 80px;
+    }
+
+    #block-3 {
+      grid-column-start: 6;
+      grid-column-end: 9;
+      display: inline-block;
+      margin-top: 80px;
+    }
+
+    .link-item {
+      font-size: 1rem;
+      font-family: "GT_America_Light";
+      display: block;
+      margin-bottom: 4px;
+    }
 }
