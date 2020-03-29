@@ -65,14 +65,14 @@ a:hover {
   grid-column-start: 3;
   grid-column-end: 5;
   display: inline-block;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 #block-3 {
   grid-column-start: 5;
   grid-column-end: 7;
   display: inline-block;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 @media only screen
