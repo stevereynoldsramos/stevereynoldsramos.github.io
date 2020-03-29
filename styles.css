@@ -47,6 +47,7 @@ p.headline {
 a {
   color: #D7D1D1;
   text-decoration: none;
+  transition: 1.4s;
 }
 
 a:hover {
