@@ -145,7 +145,7 @@ a:hover {
     #block-1 {
       grid-column-start: 2;
       grid-column-end: 10;
-      margin-top: 40px;
+      margin-top: 20px;
       display: inline-block;
     }
 
