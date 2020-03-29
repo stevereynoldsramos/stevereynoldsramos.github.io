@@ -46,7 +46,6 @@ p.headline {
 
 a {
   color: #D7D1D1;
-  text-decoration: none;
   transition: 1.4s;
 }
 
@@ -60,7 +59,14 @@ a:hover {
   font-family: "GT_America_Light";
   display: block;
   margin-bottom: 4px;
+  text-decoration: none;
 }
+
+.reference {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
 
 #block-2 {
   grid-column-start: 3;
