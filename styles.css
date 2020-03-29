@@ -45,7 +45,7 @@ p.headline {
 }
 
 a {
-  color: #D7D1D1;
+  color: #A7896D;
   transition: 1.4s;
 }
 
@@ -63,8 +63,8 @@ a:hover {
 }
 
 .reference {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
+  color: #A7896D;
+  text-decoration: none;
 }
 
 
