@@ -11,12 +11,13 @@
 
 .index, body {
   display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-template-columns: repeat(16, [col-start] 1fr);
   grid-auto-rows: auto;
   column-gap: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
+  margin: 0;
 }
 
 #block-1 {
@@ -28,7 +29,7 @@
 
 p.headline {
   font-family: "GT_America_Regular";
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #FFFBFB;
   margin-top: 40px;
 }
@@ -44,29 +45,38 @@ p.headline {
   z-index: -99;
 }
 
+#overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: -99;
+  background-color: #0C0C0D;
+  opacity: 40%;
+}
+
 a {
   color: #A7896D;
-  transition: 1.4s;
+  transition: 1s;
+  text-decoration: none;
+  margin-top: 12px;
 }
 
 a:hover {
-  opacity: 0;
-  transition: 1.4s;
+  opacity: 20%;
+  transition: 1s;
 }
 
 .link-item {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "GT_America_Light";
   display: block;
   margin-bottom: 4px;
   text-decoration: none;
 }
-
-.reference {
-  color: #A7896D;
-  text-decoration: none;
-}
-
 
 #block-2 {
   grid-column-start: 3;
