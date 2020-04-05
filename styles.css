@@ -20,22 +20,8 @@
   margin: 0;
 }
 
-#block-1 {
-  grid-column-start: 3;
-  grid-column-end: 9;
-  margin-top: 120px;
-  display: inline-block;
-}
-
-p.headline {
-  font-family: "GT_America_Regular";
-  font-size: 1.1rem;
-  color: #FFFBFB;
-  margin-top: 40px;
-}
-
 #oceans {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   width: 100%;
@@ -54,28 +40,16 @@ p.headline {
   object-fit: cover;
   overflow: hidden;
   z-index: -99;
-  background-color: #0C0C0D;
-  opacity: 40%;
+  background-color: #000000;
+  opacity: 35%;
 }
 
-a {
-  color: #C8C1B4;
-  transition: 1s;
-  text-decoration: none;
-  margin-top: 12px;
-}
-
-a:hover {
-  opacity: 20%;
-  transition: 1s;
-}
-
-.link-item {
-  font-size: 1rem;
-  font-family: "GT_America_Light";
-  display: block;
-  margin-bottom: 4px;
-  text-decoration: none;
+#block-1 {
+  grid-column-start: 3;
+  grid-column-end: 9;
+  margin-top: 80px;
+  display: inline-block;
+  float: left;
 }
 
 #block-2 {
@@ -86,10 +60,53 @@ a:hover {
 }
 
 #block-3 {
-  grid-column-start: 5;
-  grid-column-end: 7;
+  grid-column-start: 6;
+  grid-column-end: 10;
   display: inline-block;
   margin-top: 80px;
+}
+
+#block-4 {
+  grid-column-start: 3;
+  grid-column-end: 10;
+  display: block;
+  margin-top: 40px;
+}
+
+p.headline {
+  font-family: "GT_America_Regular";
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  margin-top: 40px;
+}
+
+p.title {
+  font-family: "GT_America_Regular";
+  font-size: 1.1rem;
+  color: #FFFFFF;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 1s;
+  margin-top: 12px;
+  display: block;
+  font-size: 1rem;
+  font-family: "GT_America_Light";
+}
+
+a:hover {
+  opacity: 85%;
+  transition: 1s;
+  color: #E9B144;
+}
+
+#a17 {
+  color: #E9B144;
+  display: inline;
+  font-size: 1.2rem;
+  font-family: "GT_America_Regular";
 }
 
 @media only screen
@@ -160,8 +177,8 @@ a:hover {
 
     #block-1 {
       grid-column-start: 2;
-      grid-column-end: 12;
-      margin-top: 4px;
+      grid-column-end: 10;
+      margin-top: 40px;
       display: inline-block;
     }
 
