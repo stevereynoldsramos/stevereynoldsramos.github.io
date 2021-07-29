@@ -1,82 +1,19 @@
-@font-face {
-  font-family: "GT_Zirkon_Medium";
-  src: url("assets/fonts/GT-Zirkon-Medium.woff2");
-}
-
-@font-face {
-  font-family: "GT_America_Mono_Regular";
-  src: url("assets/fonts/GT-America-Mono-Regular.woff");
-}
-
-@font-face {
-  font-family: "GT_America_Standard_Regular";
-  src: url("assets/fonts/GT-America-Standard-Regular.woff");
-}
-
-
-
-body {
-  display: grid;
-  grid-template-columns: repeat(16, [col-start] 1fr);
-  column-gap: 16px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-size: 16px;
-  margin: 0;
-  background-color: #000000;
-}
-
-#intro {
-  grid-column-start: 3;
-  grid-column-end: 8;
-  margin-top: 120px;
-  display: inline-block;
-}
-
-#col-1 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  margin-top: 24px;
-  display: inline-block;
-}
-
-#col-2 {
-  grid-column-start: 5;
-  grid-column-end: 7;
-  margin-top: 24px;
-  display: inline-block;
-}
-
-.description {
-  align: left;
-  color: #FFFFFF;
-  font-family: "GT_America_Standard_Regular";
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-}
-
-.title {
-  align: left;
-  color: #FFFFFF;
-  font-family: "GT_Zirkon_Medium";
-  font-size: 15px;
-  line-height: 24px;
-  margin-bottom: 8px;
-  font-weight: normal;
-}
-
-.link {
-  align: left;
-  color: #FFFFFF;
-  font-family: "GT_America_Mono_Regular";
-  font-size: 12px;
-  line-height: 16px;
-  display: block;
-  margin-bottom: 4px;
+#mindcontrol {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 a {
-  color: #FFFFFF;
-  text-decoration: none;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
