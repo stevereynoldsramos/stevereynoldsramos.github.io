@@ -95,9 +95,9 @@ a:hover {
 
   #text {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 6;
     margin-top: 20px;
-    min-width: 200px;
+    min-width: 180px;
     max-width: none;
   }
 
@@ -118,7 +118,7 @@ a:hover {
 
   #links {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 6;
     margin-top: 60px;
     text-align: left;
   }
