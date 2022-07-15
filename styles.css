@@ -8,6 +8,50 @@
   src: url("assets/fonts/GT-Zirkon-Medium-Trial.otf");
 }
 
+@media (max-width: 324px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(6, [col-start] 1fr);
+    column-gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FFFFFF;
+  }
+
+  #text {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin-top: 20px;
+    min-width: 180px;
+    max-width: none;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .link {
+    font-size: 16px;
+    font-family: "GT-Zirkon-Medium-Trial";
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 24px;
+  }
+
+  #links {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin-top: 60px;
+    text-align: left;
+  }
+
+}
+
 body {
   display: grid;
   grid-template-columns: repeat(16, [col-start] 1fr);
@@ -79,48 +123,4 @@ h2 {
 a:hover {
   color: #A0A0A0;
   transition: 200ms;
-}
-
-@media (max-width: 320px) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(6, [col-start] 1fr);
-    column-gap: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    background-color: #FFFFFF;
-  }
-
-  #text {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    margin-top: 20px;
-    min-width: 180px;
-    max-width: none;
-  }
-
-  h2 {
-    font-size: 20px;
-    text-align: left;
-  }
-
-  .link {
-    font-size: 16px;
-    font-family: "GT-Zirkon-Medium-Trial";
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    line-height: 24px;
-  }
-
-  #links {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    margin-top: 60px;
-    text-align: left;
-  }
-
 }
