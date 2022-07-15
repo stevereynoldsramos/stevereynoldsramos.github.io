@@ -79,7 +79,7 @@ a:hover {
   transition: 200ms;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 750px) {
   body {
     display: grid;
     grid-template-columns: repeat(6, [col-start] 1fr);
