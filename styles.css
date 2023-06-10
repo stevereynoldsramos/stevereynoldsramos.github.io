@@ -1,11 +1,6 @@
 @font-face {
-  font-family: "GT-Ultra-Median-Light";
-  src: url("assets/fonts/GT-Ultra-Median-Light-Trial.otf");
-}
-
-@font-face {
-  font-family: "GT-Zirkon-Medium-Trial";
-  src: url("assets/fonts/GT-Zirkon-Medium-Trial.otf");
+  font-family: "RoobertPROTRIAL-Regular";
+  src: url("assets/fonts/RoobertPROTRIAL-Regular.otf");
 }
 
 body {
@@ -23,103 +18,119 @@ body {
 
 #text {
   grid-column-start: 1;
-  grid-column-end: 8;
+  grid-column-end: 7;
   margin-top: 20px;
   max-width: 540px;
 }
 
-#links {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin-top: 80px;
-}
-
 h2 {
-  font-size: 28px;
-  font-family: "GT-Ultra-Median-Light";
+  font-size: 20px;
+  font-family: "RoobertPROTRIAL-Regular";
   line-height: auto;
   font-style: normal;
   font-weight: 400;
-  line-height: 110.9%; /* or 40px */
-  letter-spacing: -0.04em;
+  line-height: 24px;
   color: #000000;
 }
 
-.job {
-  font-family: "GT-Ultra-Median-Light";
-  margin: 0;
+.inline {
+  font-size: 20px;
+  font-family: "RoobertPROTRIAL-Regular";
   line-height: auto;
   font-style: normal;
   font-weight: 400;
-  line-height: 110.9%; /* or 40px */
-  letter-spacing: -0.04em;
+  line-height: 24px;
   color: #000000;
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
   text-underline-offset: 2px;
-  white-space: nowrap;
-  transition: 400ms;
 }
 
 .link {
-  font-size: 20px;
-  font-family: "GT-Zirkon-Medium-Trial";
-  text-decoration: none;
+  font-size: 16px;
+  font-family: "RoobertPROTRIAL-Regular";
+  line-height: auto;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+  line-height: 24px;
   color: #000000;
-  transition: 300ms;
+  list-style-image: url(/assets/icons/dot.svg);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-indent: cap;
+  list-style-position: inside;
+}
+
+li > .inline {
+  padding-left: 4px;
 }
 
 a:hover {
   color: #A0A0A0;
-  transition: 200ms;
 }
 
-@media (max-width: 750px) {
+@media only screen and (min-width: 240px) and (max-width: 600px) {
+
   body {
     display: grid;
     grid-template-columns: repeat(6, [col-start] 1fr);
-    column-gap: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    background-color: #FFFFFF;
+    column-gap: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   #text {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 6;
     margin-top: 20px;
     min-width: 180px;
     max-width: none;
   }
 
-  h2 {
-    font-size: 24px;
-    text-align: left;
-    line-height: 112%;
-  }
-
-  .link {
-    font-size: 20px;
-    font-family: "GT-Zirkon-Medium-Trial";
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    line-height: 28px;
-  }
-
-  #links {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    margin-top: 60px;
-    text-align: left;
-  }
-
 }
+
+  @media only screen and (min-width: 601px) and (max-width: 750px) {
+  
+    body {
+      display: grid;
+      grid-template-columns: repeat(6, [col-start] 1fr);
+      column-gap: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    #text {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      margin-top: 20px;
+      min-width: 180px;
+      max-width: none;
+    }
+  
+}
+
+  @media only screen and (min-width: 751px) {
+    
+    body {
+      display: grid;
+      grid-template-columns: repeat(16, [col-start] 1fr);
+      column-gap: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    #text {
+      grid-column-start: 1;
+      grid-column-end: 7;
+      margin-top: 20px;
+      min-width: 180px;
+      max-width: 400px;
+    }
+  }
