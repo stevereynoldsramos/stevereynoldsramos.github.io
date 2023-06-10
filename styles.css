@@ -54,16 +54,12 @@ h2 {
   font-weight: 400;
   line-height: 24px;
   color: #000000;
-  list-style-image: url(/assets/icons/dot.svg);
+  list-style-image: disc;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
   text-indent: cap;
   list-style-position: inside;
-}
-
-li > .inline {
-  padding-left: 4px;
 }
 
 a:hover {
