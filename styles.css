@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "RoobertPROTRIAL-Regular";
-  src: url("assets/fonts/RoobertPROTRIAL-Regular.otf");
+  font-family: "ABCMonumentGroteskSemi-Mono-Regular";
+  src: url("assets/fonts/ABCMonumentGroteskSemi-Mono-Regular.otf");
 }
 
 body {
@@ -13,7 +13,7 @@ body {
   margin-bottom: 0px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 
 #text {
@@ -21,39 +21,40 @@ body {
   grid-column-end: 7;
   margin-top: 20px;
   max-width: 540px;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 20px;
-  font-family: "RoobertPROTRIAL-Regular";
+  font-size: 14px;
+  font-family: "ABCMonumentGroteskSemi-Mono-Regular";
   line-height: auto;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  color: #000000;
+  line-height: 130%;
+  color: #FFFFFF;
 }
 
 .inline {
-  font-size: 20px;
-  font-family: "RoobertPROTRIAL-Regular";
+  font-size: 14px;
+  font-family: "ABCMonumentGroteskSemi-Mono-Regular";
   line-height: auto;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  color: #000000;
+  line-height: 130%;
+  color: #FFFFFF;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
 .link {
-  font-size: 16px;
-  font-family: "RoobertPROTRIAL-Regular";
+  font-size: 14px;
+  font-family: "ABCMonumentGroteskSemi-Mono-Regular";
   line-height: auto;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  color: #000000;
+  line-height: 130%;
+  color: #FFFFFF;
   list-style-image: disc;
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -63,7 +64,7 @@ h2 {
 }
 
 a:hover {
-  color: #A0A0A0;
+  color: #FFB81C;
 }
 
 @media only screen and (min-width: 240px) and (max-width: 600px) {
@@ -87,11 +88,11 @@ a:hover {
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .inline {
-    font-size: 18px;
+    font-size: 12px;
   }
 
 }
