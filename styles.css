@@ -81,6 +81,10 @@ a:hover {
     margin-right: 40px;
     margin-top: 0px;
     margin-bottom: 0px;
+    background-image: url("assets/graphic_v2.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center 500%;
   }
 
   #text {
@@ -92,11 +96,11 @@ a:hover {
   }
 
   h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .inline {
-    font-size: 12px;
+    font-size: 14px;
   }
 
 }
